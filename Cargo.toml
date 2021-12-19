@@ -1,0 +1,9 @@
+[package]
+name = "bevy_trimesh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.5"
+parry3d = "0.7"
+thiserror = "1"
