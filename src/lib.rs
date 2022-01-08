@@ -42,7 +42,7 @@ pub fn convert_verticies(
     verticies: &VertexAttributeValues,
 ) -> Result<impl Iterator<Item = Point<Real>> + '_, UnsupportedFormatError> {
     let verticies = match verticies {
-        VertexAttributeValues::Float3(val) => val,
+        VertexAttributeValues::Float32x3(val) => val,
         _ => return Err(UnsupportedFormatError("only [f32; 3] is supported")),
     };
     Ok(verticies.iter().map(|vertex| Point::from_slice(vertex)))
