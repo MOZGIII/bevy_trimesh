@@ -4,6 +4,6 @@ version = "0.3.0"
 edition = "2021"
 
 [dependencies]
-bevy = "0.8"
-parry3d = "0.9"
+bevy = "0.9"
+parry3d = "0.11"
 thiserror = "1"
